@@ -30,28 +30,31 @@ h2 {
 
 header {
     box-shadow: 0px 0px 12px #f2f2f2;
-    position: fixed;
+    position:static;
     width: 100%;
     background-color: #ffffff;
     padding: 20px 0;
 }
 
 .caixa {
+    display: flex;
+    justify-content: space-between;
     position: relative;
     width: 80%;
-    margin: 0 auto;
+    margin: 0 auto; 
 }
 
 nav {
-    position: absolute;
-    top: 10px;
-    right: 0;
+}
+nav ul{
+    margin: 10px;
+    padding: 0px;
+    width: fit-content;
 }
 
 nav li {
     display: inline-block;
-    margin: 0 0 0 50px;
-
+    margin: 0 0 0 10px;
 }
 
 nav a {
@@ -60,9 +63,17 @@ nav a {
     text-decoration: none;
 }
 
+nav a:hover {
+    color: #000000;
+    font-weight: 500;
+    font-size: large;
+    text-decoration: none;
+}
+
 header h1 {
+    width: fit-content;
     margin: 0px;
-text-align: left;
+    text-align: left;
 }
 
 
@@ -83,8 +94,9 @@ text-align: left;
 
 .box img {
     max-width: 100%;
-    border-radius: 5%;
+    border-radius: 5% 5% 0% 0%;
     margin: 0px;
+
 }
 
 button {
@@ -93,9 +105,8 @@ button {
     font-weight: 550;
     background-color: rgb(255, 255, 255);
     cursor: pointer;
-    grid-template-columns: min-content;
     padding: 5px 5px;
-    width: 104px;
+
 }
 
 .botao {
@@ -103,8 +114,10 @@ button {
     grid-template-columns: auto;
     border-top: 1px rgb(219, 219, 219) solid;
     padding: 3px;
+    display: flex;
+    justify-content: space-around
 }
 
 .botao button:hover {
-    background-color: rgb(250, 250, 250);
+    background-color: rgb(238, 238, 238);
 }
