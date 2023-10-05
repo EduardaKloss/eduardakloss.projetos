@@ -23,9 +23,7 @@ Estou explorando várias tecnologias web, incluindo, mas não se limitando a:
 - HTML
 - CSS
 - JavaScript
-- Frameworks front-end (por exemplo, React, Vue.js)
-- Linguagens de programação do lado do servidor (por exemplo, Node.js, Python)
-- Bancos de dados (por exemplo, SQL, MongoDB)
+- Bancos de dados (por exemplo, SQL)
 - Git e Controle de Versão
 
 ## Como Contribuir
