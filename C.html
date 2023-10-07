@@ -1,32 +1,362 @@
 <!DOCTYPE html>
-<html lang="en">
+<div lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Resumos</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumos</title>
+    <link rel="stylesheet" href="/path/to/styles/default.css"/>
+<script src="/path/to/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-    <body>
+<body>
+    <header>
+        <div class="caixa">
+            <h1>eduarda</h1>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="index.html">Resumos</a></li>
+                    <li><a href="Salvos.html">Salvos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-        <header>
-            <div class="caixa">
-                <h1>eduarda</h1>
-                <nav>
-                    <ul>
-                        <li><a href="home.html">Home</a></li>
-                        <li><a href="index.html">Resumos</a></li>
-                        <li><a href="Salvos.html">Salvos</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-    </body>
-    <div id="content">
-        
+<div id="imgcapaconteudo"></div>
+<h1>C</h1>
+<div id="content">
+    <div class="sumario">
+        <h4>Sumário</h4>
+        <ol>
+            <a href="">
+                <li>Comandos mais usados</li>
+            </a>
+            <a href="">
+                <li>Tipos de dados</li>
+            </a>
+        </ol>
     </div>
+    <div class="boxconteudo">
+        <h2>Sobre a linguagem</h2>
+        <pre>
+Ela é frequentemente usada para desenvolver sistemas operacionais, aplicativos de baixo nível, drivers de hardware e software de sistemas embarcados devido às suas principais características:
+<ul>
+<li>Eficiência: A linguagem C permite um controle preciso sobre os recursos de hardware, tornando-a uma escolha ideal para programação de sistemas e aplicativos que requerem alta performance. </li>
+<li>Portabilidade: O C é altamente portátil, o que significa que o código escrito em C pode ser compilado e executado em uma variedade de plataformas, tornando-a uma escolha popular para desenvolvedores que desejam criar programas que funcionem em diferentes sistemas operacionais.</li>
+<li>Sintaxe Simples: A sintaxe do C é relativamente simples e direta, o que a torna acessível para desenvolvedores novatos e experientes.</li>
+<li>Recursos de baixo nível: O C fornece acesso direto à memória e permite a manipulação de ponteiros, o que é útil para desenvolvimento de sistemas e aplicações que exigem controle preciso sobre os recursos do sistema.</li>
+</ul>
+</pre>        
+        <h2>Comandos mais utilizados</h2>
+        <table class="tabela">
+            <tr>
+                <th>Função</th>
+                <th>Comando</th>
+                <th>Descrição</th>
+            </tr>
+            <tr>
+                <td>Comentário</td>
+                <td>\\</td>
+                <td>Comentário</td>
+            </tr>
+            <tr>
+                <td>Comentário</td>
+                <td>\* *\</td>
+                <td>Comentário de múltiplas linhas</td>
+            </tr>
+            <tr>
+                <td>Imprimir aspas</td>
+                <td>printf("\" \"")</td>
+                <td>Imprime aspas sem confundir (\”)</td>
+            </tr>
+            <tr>
+                <td>Constantes</td>
+                <td>const float PI = 3.1415</td>
+                <td>Colocá-las em maiúsculo é uma boa prática</td>
+            </tr>
+            <tr>
+                <td>Aritmética com var</td>
+                <td>x+=3, x-=3, x*=3, x/=3</td>
+                <td>x=x+3, x=x-3, x=x*3, x=x/3</td>
+            </tr>
+            <tr>
+                <td>Input fgets</td>
+                <td>fgets(nome, 30, stdin);</td>
+                <td>Aceita espaços → (var, tamanho, standard input);</td>
+            </tr>
+            <tr>
+                <td>Input fgets sem quebra de linha</td>
+                <td>#include &lt;string.h&gt; nome[strlen(name)-1] = '\0';</td>
+                <td>Retira a quebra de linha após %s no printf</td>
+            </tr>
+            <tr>
+                <td>Especificadores de formatação</td>
+                <td>%-n</td>
+                <td>Deixa uma caixa com n dígitos e o valor é alocado à esquerda</td>
+            </tr>
+            <tr>
+                <td>Especificadores de formatação</td>
+                <td>%n</td>
+                <td>Deixa uma caixa com n dígitos e o valor é alocado à direita</td>
+            </tr>
+            <tr>
+                <td>Float</td>
+                <td>%f.n</td>
+                <td>Mostra n dígitos depois da vírgula</td>
+            </tr>
+            <tr>
+                <td>Do while ≠ While</td>
+                <td>do{...}while(...); ≠ while(...){...};</td>
+                <td>Executa o loop e checa se continua ≠ checa de executa o loop</td>
+            </tr>
+            <tr>
+                <td>Continue</td>
+                <td>if(...){Continue;}</td>
+                <td>Pula o que está dentro de ...</td>
+            </tr>
+            <tr>
+                <td>Break</td>
+                <td>if(...){Break;}</td>
+                <td>Interrompe a execução do loop ou semelhantes</td>
+            </tr>
+        </table>
+        <h2>Tipos de dado</h2>
+        <table>
+            <tr>
+                <th>Tipo</th>
+                <th>Declaração</th>
+                <th>Bytes</th>
+                <th>%_</th>
+                <th>Anotações</th>
+                <th>Limites</th>
+            </tr>
+            <tr>
+                <td>Integer</td>
+                <td>int a = 1;</td>
+                <td>4</td>
+                <td>%d</td>
+                <td></td>
+                <td>-2.147.483.648 a 2.147.483.647</td>
+            </tr>
+            <tr>
+                <td>Short Int</td>
+                <td>short a = 1;</td>
+                <td>2</td>
+                <td>%d</td>
+                <td></td>
+                <td>-32768 a +32767</td>
+            </tr>
+            <tr>
+                <td>Uns Short</td>
+                <td>unsigned short a = 1;</td>
+                <td>2</td>
+                <td>%u</td>
+                <td></td>
+                <td>0 a 65535</td>
+            </tr>
+            <tr>
+                <td>long long</td>
+                <td>long long int a = 1;</td>
+                <td>8</td>
+                <td>%lld</td>
+                <td></td>
+                <td>-9 quintilhões a +9 quintilhões</td>
+            </tr>
+            <tr>
+                <td>uns long long</td>
+                <td>unsigned long long a = 1;</td>
+                <td>8</td>
+                <td>%llu</td>
+                <td></td>
+                <td>0 a 18 quintilhões</td>
+            </tr>
+            <tr>
+                <td>Char</td>
+                <td>char a = 'a';</td>
+                <td>1</td>
+                <td>%c</td>
+                <td>ou %d para ASCII</td>
+                <td>-128 a +127</td>
+            </tr>
+            <tr>
+                <td>Uns Char</td>
+                <td>unsigned char = 'a';</td>
+                <td>1</td>
+                <td>%c %d</td>
+                <td></td>
+                <td>0 a +255</td>
+            </tr>
+            <tr>
+                <td>String</td>
+                <td>char a[] = 'aaa';</td>
+                <td></td>
+                <td>%s</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Float</td>
+                <td>float a = 0.1;</td>
+                <td>4</td>
+                <td>%f</td>
+                <td>%0.10f → 10 dígitos após a ,</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Double</td>
+                <td>double a = 0.111;</td>
+                <td>8</td>
+                <td>%lf</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Boolean</td>
+                <td>bool a = true;</td>
+                <td>1</td>
+                <td>%d</td>
+                <td>&lt;stdbool.h&gt; → 1=t, 0=f</td>
+                <td></td>
+            </tr>
+        </table>
+        <h2>arrays</h2>
+        <table>
+            <tr>
+                <th>Tipo</th>
+                <th>Declaração</th>
+                <th>Bytes</th>
+                <th>%_</th>
+                <th>Anotações</th>
+                <th>Limites</th>
+            </tr>
+            <tr>
+                <td>Integer</td>
+                <td>int a = 1;</td>
+                <td>4</td>
+                <td>%d</td>
+                <td></td>
+                <td>-2.147.483.648 a 2.147.483.647</td>
+            </tr>
+            <tr>
+                <td>Short Int</td>
+                <td>short a = 1;</td>
+                <td>2</td>
+                <td>%d</td>
+                <td></td>
+                <td>-32768 a +32767</td>
+            </tr>
+            <tr>
+                <td>Uns Short</td>
+                <td>unsigned short a = 1;</td>
+                <td>2</td>
+                <td>%u</td>
+                <td></td>
+                <td>0 a 65535</td>
+            </tr>
+            <tr>
+                <td>long long</td>
+                <td>long long int a = 1;</td>
+                <td>8</td>
+                <td>%lld</td>
+                <td></td>
+                <td>-9 quintilhões a +9 quintilhões</td>
+            </tr>
+            <tr>
+                <td>uns long long</td>
+                <td>unsigned long long a = 1;</td>
+                <td>8</td>
+                <td>%llu</td>
+                <td></td>
+                <td>0 a 18 quintilhões</td>
+            </tr>
+            <tr>
+                <td>Char</td>
+                <td>char a = 'a';</td>
+                <td>1</td>
+                <td>%c</td>
+                <td>ou %d para ASCII</td>
+                <td>-128 a +127</td>
+            </tr>
+            <tr>
+                <td>Uns Char</td>
+                <td>unsigned char = 'a';</td>
+                <td>1</td>
+                <td>%c %d</td>
+                <td></td>
+                <td>0 a +255</td>
+            </tr>
+            <tr>
+                <td>String</td>
+                <td>char a[] = 'aaa';</td>
+                <td></td>
+                <td>%s</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Float</td>
+                <td>float a = 0.1;</td>
+                <td>4</td>
+                <td>%f</td>
+                <td>%0.10f → 10 dígitos após a ,</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Double</td>
+                <td>double a = 0.111;</td>
+                <td>8</td>
+                <td>%lf</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Boolean</td>
+                <td>bool a = true;</td>
+                <td>1</td>
+                <td>%d</td>
+                <td>&lt;stdbool.h&gt; → 1=t, 0=f</td>
+                <td></td>
+            </tr>
+        </table>
+        <h2>Funções</h2>
+        <h4>Declaração de uma função</h4>
+        <pre class="codebox">
+            <code class="codetext">
+    tipo nome(tipo parâmetro, tipo parâmetro...) {
+        // Código da função
+    return valor_de_retorno; // Opcional, dependendo do tipo de retorno
+    }
 
+    int main(){
+    nome(argumento, argumento);
+    }
+            </code>
+        </pre>
 
+    <h4>Declaração com protótipo</h4>
+    <p>Avisa se você errar o número de argumentos, facilita a visualização por deixar as funções no final do código</p>
+    
+    <pre class="codebox">
+    <code class="codetext">
+        tipo nome(tipo, tipo);
 
+        int main(){...}
+        
+        tipo nome(tipo parâmetro, tipo parâmetro...) {...}
+    </code>
+</pre>
+<h2>Bibliotecas</h2>
+<div class="sumario"> 
+    <h4>Sumário</h4>
+        <ul>
+            <a><li href="">math.h</li></a>
+            <a><li href="">string.h</li></a>
+        </ul>
+</div>
+</div>
+
+</body>
 </html>
