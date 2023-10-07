@@ -1,3 +1,5 @@
+/* propriedades gerais */
+
 * {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     box-sizing: border-box;
@@ -21,16 +23,11 @@ h2 {
     color: #000;
 }
 
-.box p {
-    font-size: 12px;
-    text-align: center;
-    margin-top: 2px;
-    color: #505050;
-}
+/* Header */
 
 header {
     box-shadow: 0px 0px 12px #f2f2f2;
-    position:static;
+    position: static;
     width: 100%;
     background-color: #ffffff;
     padding: 20px 0;
@@ -41,12 +38,11 @@ header {
     justify-content: space-between;
     position: relative;
     width: 80%;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
-nav {
-}
-nav ul{
+
+nav ul {
     margin: 10px;
     padding: 0px;
     width: fit-content;
@@ -63,10 +59,9 @@ nav a {
     text-decoration: none;
 }
 
-nav a:hover {
+.caixa li:hover {
     color: #000000;
-    font-weight: 500;
-    font-size: large;
+    transform: scale(1.2);
     text-decoration: none;
 }
 
@@ -76,8 +71,9 @@ header h1 {
     text-align: left;
 }
 
+/* Conteúdo da página - RESUMOS */
 
-#content {
+#containerconteudos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     background-color: rgb(248, 248, 248);
@@ -90,6 +86,13 @@ header h1 {
     margin: 20px;
     background-color: white;
     box-shadow: 1px 1px 5px rgb(205, 205, 205);
+}
+
+.box p {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 2px;
+    color: #505050;
 }
 
 .box img {
@@ -121,3 +124,81 @@ button {
 .botao button:hover {
     background-color: rgb(238, 238, 238);
 }
+
+/* Conteúdo da página - Linguagem */
+
+/* sumário */
+.sumario {
+    width: 30%;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 1px 1px 5px rgb(205, 205, 205);
+}
+
+.sumario h4 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.sumario li {
+    list-style: disc;
+    color: #000;
+    text-decoration: none;
+}
+
+/*conteúdo*/
+
+.boxconteudo {
+    background-color: #f2f2f2;
+    margin: 30px;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.boxconteudo ul{
+    list-style-type:decimal;
+    margin: 0px;
+}
+
+/* tabela */
+
+.boxconteudo table {
+    background-color: #f9f9f9;
+    box-shadow: 1px 1px 5px rgb(205, 205, 205);
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 8px;
+    width: 80%;
+}
+
+.boxconteudo th, td {
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+tr:hover {
+    background-color: #f2f2f2;
+}
+
+/* caixa de código */
+.codebox{
+background-color: #33353b;
+box-shadow: 1px 1px 5px rgb(205, 205, 205);
+color: white;
+padding: 10px;
+margin: auto;
+width: 50%;
+border-radius: 10px;
+}
+
+pre { white-space: pre-wrap; }
+
+
+.codebox .codetext{
+    font-family: monospace;
+    font-weight: 600;
+}
+/*  */
