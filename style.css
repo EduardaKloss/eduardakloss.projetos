@@ -22,6 +22,12 @@ h2 {
     font-weight: bolder;
     color: #000;
 }
+a {
+    text-decoration: none;
+}
+a:hover{
+    font-weight: 600;
+}
 
 /* Header */
 
@@ -145,9 +151,9 @@ header h1 {
 }
 
 .sumario li {
-    list-style: disc;
+    list-style:decimal;
     color: #000;
-    text-decoration: none;
+
 }
 
 /*conteúdo*/
@@ -196,9 +202,7 @@ width: 50%;
 border-radius: 10px;
 }
 
-pre {
-white-space: pre-wrap; 
-}
+pre { white-space: pre-wrap; }
 
 
 .codebox .codetext{
@@ -229,3 +233,47 @@ footer ul li:hover{
 }
 
 /* baixar */
+#baixar button{
+    border: none;
+    box-shadow: 1px 1px 5px rgb(205, 205, 205);
+    background-color: rgb(250, 250, 250);
+    padding: 20px;
+    border-radius: 5%;
+    position:sticky;
+    margin: 1% 45%;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+#baixar button:hover{
+    transform: scale(1.1);
+    background-color: #e9ece4;
+}
+
+/* ---------------HOME PAGE--------------------------- */
+#princiapl{
+    text-align: center;
+}
+
+
+#apresentacao{
+    display: flex;
+    justify-content: center;
+}
+
+#apresentacao h1{
+    font-size: 100px;
+    text-align: center;
+    margin: 0px 0px;
+}
+
+#apresentacao img{
+    position: relative;
+    max-width: 350px;
+}
+
+.menor{
+    font-size: 50px;
+}
